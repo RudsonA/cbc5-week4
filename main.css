@@ -1,0 +1,25 @@
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rebeccapurple;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+}
+
+
+#game {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 400px;
+    width: 800px;
+}
+
