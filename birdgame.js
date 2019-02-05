@@ -21,33 +21,12 @@ String.prototype.replaceAt = function (index, replacement) {
 
 document.getElementById("gameButton").onclick = function playGame() {
 
-    // for (let i = 3; i > 0; i--) {
     let birdsPath = Math.floor(Math.random() * 4) + 1;
 
-    // function gameReturns() {
-    //     if (birdsPath == 0) {
-    //         document.getElementById("game").innerHTML = "Bird was at 1!";
-    //     } else if (birdsPath == 1) {
-    //         document.getElementById("game").innerHTML = "Bird was at 2!";
-    //     } else if (birdsPath == 2) {
-    //         document.getElementById("game").innerHTML = "Bird was at 3!";
-    //     } else if (birdsPath == 3) {
-    //         document.getElementById("game").innerHTML = "Bird was at 4!";
-    //     } else if (birdsPath > 3 || birdsPath < 0) {
-    //         documenty
-    //     } else {
-    //         document.getElementById("game").innerHTML = "Unacceptable Return!";
-    //     }
-
-    // }
-
-    // let attempts = i;
-    // let remainding = "You have " + (attempts - 1) + " attempt(s) remainding!";
-    // const textBox = document.getElementById("textBox");
     function clearText() {
         document.getElementById("textBox").value = ""
     }
-    // let number = prompt("Pick a number from zero to three");
+    
     const number = document.getElementById("textBox").value;
 
     function path(birdsPath) {
@@ -87,21 +66,13 @@ document.getElementById("gameButton").onclick = function playGame() {
         alert("Pick a number one to four!")
     }
 
+    if (isNaN(number)) {
+        document.getElementById("game").innerHTML = "Not a Number!"
+        console.log("Not a Number!")
+    }
+
     clearText(); 
 }
-// if (number == birdsPath) {
-//     document.getElementById("game").innerHTML = hit;
-//     path(birdsPath);
-//     document.getElementById("gridImage").src = "img/shot.jpg";   
-// } else {
-//     path(birdsPath);
-//     console.log(birdsPath);
-//     document.getElementById("game").innerHTML = "Bird was at " + birdsPath + "!" 
-// break
-// }
-
-// console.log(number)
-// }
 
 document.getElementById("textBox").onkeyup = document.getElementById("gameButton").onclick 
 
