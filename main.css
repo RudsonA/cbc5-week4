@@ -27,9 +27,17 @@ h1 {
     float: left;
     width: 300px;
     flex-wrap: wrap;
+    margin-left: 20px;
+    border: 15px;
+
 }
 
 #grid {
     float: right;
     width: 700px;
+}
+
+#gameBox {
+    margin: auto;
+    width: 75%;
 }
