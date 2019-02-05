@@ -103,7 +103,7 @@ document.getElementById("gameButton").onclick = function playGame() {
 // console.log(number)
 // }
 
-document.getElementById("textBox").onkeyup = playGame()
+document.getElementById("textBox").onkeyup = document.getElementById("gameButton").onclick 
 
 display();
 
