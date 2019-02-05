@@ -23,3 +23,13 @@ h1 {
     width: 800px;
 }
 
+.flex {
+    float: left;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+#grid {
+    float: right;
+    width: 700px;
+}

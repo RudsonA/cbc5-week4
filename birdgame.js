@@ -15,7 +15,6 @@ let birdsPath = Math.floor(Math.random() * 3);
 
 let newPath = grid;
 
-
 String.prototype.replaceAt=function(index, replacement) {
     return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
 } 
@@ -32,12 +31,16 @@ document.getElementById("gameButton").onclick = function playGame() {
         function path(birdsPath) {
             if (birdsPath == 0) {
                 console.log(grid.replaceAt(0, "X"));
+                document.getElementById("gridImage").src = "img/plot1.gif";
             } else if (birdsPath==1) {
                 console.log(grid.replaceAt(2, "X"));
+                document.getElementById("gridImage").src = "img/plot2.gif";
             } else if (birdsPath==2) {
                 console.log(grid.replaceAt(4, "X"));
+                document.getElementById("gridImage").src = "img/plot3.gif";
             } else if (birdsPath == 3) {
                 console.log(grid.replaceAt(6, "X"));
+                document.getElementById("gridImage").src = "img/plot4.gif";
             } else {
                 console.log("Unnacceptable input");
             }
@@ -46,20 +49,20 @@ document.getElementById("gameButton").onclick = function playGame() {
         if (number == birdsPath) {
             document.getElementById("game").innerHTML = hit;
             path(birdsPath);
+            document.getElementById("gridImage").src = "img/shot.jpg";
             console.log(birdsPath);
             // document.getElementById("grid").innerHTML = path(birdsPath)
             break
         } else {
-            document.getElementById("game").innerHTML = (missed + birdwas) + " " + remainding; 
+            document.getElementById("game").innerHTML = missed + birdwas
             path(birdsPath);
             console.log(birdsPath);
             // document.getElementById("grid").innerHTML = path(birdsPath)
-            // break
+            break
         }
         
     }
 }
-
 
 display()
 
