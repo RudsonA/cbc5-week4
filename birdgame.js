@@ -75,9 +75,17 @@ document.getElementById("gameButton").onclick = function playGame() {
     clearText(); 
 }
 
-document.getElementById("textBox").onkeyup = function () {
-    document.getElementById("gameButton").onclick 
-}
+// document.getElementById("textBox").onkeyup = function () {
+//     document.getElementById("gameButton").onclick 
+// }
+
+// document.getElementById("textBox").onkeyup = document.getElementById("gameButton").onclick 
+
+document.getElementById("textBox").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        document.getElementById("gameButton").click()
+    }
+})
 
 display();
 
