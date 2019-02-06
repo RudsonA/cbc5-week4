@@ -96,3 +96,20 @@ function display() {
 
 // math.floor(math.random()*4)
 // (firstInput === secondInput)
+
+
+// Grid 
+
+function buildGrid () {
+
+let clickGrid = document.getElementById("mouseGrid"); 
+
+for (let i = 0; i < 4; i++) {
+    let gridBox = document.createElement("div");
+    gridBox.classList.add("div");
+    gridBox.classList.add("div-" + i);
+    clickGrid.appendChild(gridBox);
+}
+
+
+}
