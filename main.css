@@ -41,3 +41,7 @@ h1 {
     margin: auto;
     width: 75%;
 }
+
+body {
+    background-color: aliceblue;
+}
