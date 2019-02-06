@@ -64,10 +64,11 @@ document.getElementById("gameButton").onclick = function playGame() {
 
     if (number > 4 || number < 0) {
         alert("Pick a number one to four!")
+        console.log("Pick a number one to four!")
     }
 
     if (isNaN(number)) {
-        document.getElementById("game").innerHTML = "Not a Number!"
+        alert("Not a Number!") 
         console.log("Not a Number!")
     }
 
