@@ -28,11 +28,20 @@ h1 {
     flex-wrap: wrap;
     margin-left: 20px;
     border: 15px;
-
+    float: left;
+    display: block;
 }
 
 #grid {
     width: 700px;
+    float: right;
+    display: block;
+}
+
+.bottom{
+    display: block;
+    margin: auto; 
+    position: absolute;
 }
 
 #gameBox {
@@ -54,41 +63,41 @@ body {
 
 .box.box-0 {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     height: 400px;
     display: inline-block;
     width: 400px;
-    border: 10px; 
+    border: 10px;
     border-color: black;
-    
+
 }
 
 .box.box-1 {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     height: 400px;
     display: inline-block;
     width: 400px;
-    border: 10px; 
+    border: 10px;
     border-color: black;
 }
 
 .box.box-2 {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     height: 400px;
     display: inline-block;
     width: 400px;
-    border: 10px; 
+    border: 10px;
     border-color: black;
 }
 
 .box.box-3 {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     height: 400px;
     display: inline-block;
     width: 400px;
-    border: 10px; 
+    border: 10px;
     border-color: black;
 }
