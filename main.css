@@ -24,7 +24,6 @@ h1 {
 }
 
 .flex {
-    float: left;
     width: 300px;
     flex-wrap: wrap;
     margin-left: 20px;
@@ -33,15 +32,63 @@ h1 {
 }
 
 #grid {
-    float: right;
     width: 700px;
 }
 
 #gameBox {
     margin: auto;
     width: 75%;
+    display: block;
 }
 
 body {
     background-color: aliceblue;
+}
+
+#mouseGrid {
+    width: 900px;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.box.box-0 {
+    box-sizing: border-box;
+    margin:0;
+    height: 400px;
+    display: inline-block;
+    width: 400px;
+    border: 10px; 
+    border-color: black;
+    
+}
+
+.box.box-1 {
+    box-sizing: border-box;
+    margin:0;
+    height: 400px;
+    display: inline-block;
+    width: 400px;
+    border: 10px; 
+    border-color: black;
+}
+
+.box.box-2 {
+    box-sizing: border-box;
+    margin:0;
+    height: 400px;
+    display: inline-block;
+    width: 400px;
+    border: 10px; 
+    border-color: black;
+}
+
+.box.box-3 {
+    box-sizing: border-box;
+    margin:0;
+    height: 400px;
+    display: inline-block;
+    width: 400px;
+    border: 10px; 
+    border-color: black;
 }
