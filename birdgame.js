@@ -30,34 +30,19 @@ document.getElementById("gameButton").onclick = function playGame() {
     const number = document.getElementById("textBox").value;
 
     function path(birdsPath) {
+
         if (birdsPath == number) {
             document.getElementById("game").innerHTML = hit;
             document.getElementById("gridImage").src = "img/shot.jpg";
             console.log(grid);
             console.log(birdsPath);
-        } else if (birdsPath == 1) {
-            console.log(grid.replaceAt(0, "X"));
-            document.getElementById("gridImage").src = "img/plot1.gif";
-            document.getElementById("game").innerHTML = "Missed! Bird was at 1!";
-            console.log(birdsPath);
-        } else if (birdsPath == 2) {
-            console.log(grid.replaceAt(2, "X"));
-            document.getElementById("gridImage").src = "img/plot2.gif";
-            document.getElementById("game").innerHTML = "Missed! Bird was at 2!";
-            console.log(birdsPath);
-        } else if (birdsPath == 3) {
-            console.log(grid.replaceAt(4, "X"));
-            document.getElementById("gridImage").src = "img/plot3.gif";
-            document.getElementById("game").innerHTML = "Missed! Bird was at 3!";
-            console.log(birdsPath);
-        } else if (birdsPath == 4) {
-            console.log(grid.replaceAt(6, "X"));
-            document.getElementById("gridImage").src = "img/plot4.gif";
-            document.getElementById("game").innerHTML = "Missed! Bird was at 4!";
-            console.log(birdsPath);
         } else {
-            document.getElementById("game").innerHTML = "Unacceptable Return!";
-        } console.log(grid)
+            console.log(grid.replaceAt(`${birdsPath}`, "X"));
+            document.getElementById("gridImage").src = `img/plot${birdsPath}.gif`; 
+            document.getElementById("game").innerHTML = `Missed! Bird was at ${number}!`; 
+            console.log(birdsPath);
+        }
+         console.log(grid)
     }
 
     path(birdsPath);
@@ -75,11 +60,6 @@ document.getElementById("gameButton").onclick = function playGame() {
     clearText(); 
 }
 
-// document.getElementById("textBox").onkeyup = function () {
-//     document.getElementById("gameButton").onclick 
-// }
-
-// document.getElementById("textBox").onkeyup = document.getElementById("gameButton").onclick 
 
 document.getElementById("textBox").addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
@@ -92,7 +72,3 @@ display();
 function display() {
     document.getElementById("game").style.backgroundRepeat = "no-repeat";
 }
-
-
-// math.floor(math.random()*4)
-// (firstInput === secondInput)
