@@ -18,9 +18,10 @@ h1 {
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: inline;
     height: 400px;
     width: 800px;
+    float: right;
 }
 
 .flex {
@@ -29,7 +30,7 @@ h1 {
     flex-wrap: wrap;
     margin-left: 20px;
     border: 15px;
-
+    display: inline;
 }
 
 #grid {
@@ -38,6 +39,8 @@ h1 {
 }
 
 #gameBox {
-    margin: auto;
-    width: 75%;
+    margin: 0;
+    text-align: center;
+    float: left;
+    display: inline;
 }
